@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "type": "House",
+    "price": 450000,
+    "bedrooms": 3,
+    "dateAdded": "2024-11-15",
+    "postcode": "BR1",
+    "location": "Bromley, London",
+    "shortDescription": "Stunning Victorian gem with enchanting garden paradise",
+    "longDescription": "Step into this absolutely breathtaking Victorian masterpiece where history meets modern luxury! This beautiful home welcomes you with its grand entrance hall, leading to a gorgeously renovated chef's kitchen with marble countertops and premium appliances. The spacious living areas flow seamlessly into a magical rear garden - perfect for summer barbecues and lazy Sunday afternoons. Located in a highly sought-after neighborhood with top-rated schools just around the corner. This isn't just a house, it's a lifestyle! ✨🏡",
+    "images": [
+      "images/house_1.jpg",
+      "images/house_2.jpg",
+      "images/house_3.jpg",
+      "images/house_4.jpg",
+      "images/house_5.jpg",
+      "images/house_6.jpg"
+    ],
+    "floorPlan": "images/floorplan_1.jpg",
+    "mapCoordinates": { "lat": 51.4067, "lng": 0.0149 }
+  },
+  {
+    "id": 2,
+    "type": "Flat",
+    "price": 280000,
+    "bedrooms": 2,
+    "dateAdded": "2024-12-01",
+    "postcode": "NW1",
+    "location": "Camden, London",
+    "shortDescription": "Ultra-modern sky apartment in vibrant Camden",
+    "longDescription": "Welcome to urban living at its finest! This sleek, contemporary 2-bedroom sanctuary sits in the beating heart of Camden's creative scene. Floor-to-ceiling windows flood the open-plan living space with natural light, while the designer kitchen boasts top-of-the-line appliances that would make any chef smile. Wake up to stunning city views, walk to trendy cafes, and catch the tube in minutes. Perfect for young professionals who want to live where the action is! 🎨🌆",
+    "images": [
+      "images/flat_1.jpg",
+      "images/flat_2.jpg",
+      "images/flat_3.jpg",
+      "images/flat_4.jpg",
+      "images/flat_5.jpg",
+      "images/flat_6.jpg"
+    ],
+    "floorPlan": "images/floorplan_1.jpg",
+    "mapCoordinates": { "lat": 51.5390, "lng": -0.1426 }
+  },
+  {
+    "id": 3,
+    "type": "House",
+    "price": 750000,
+    "bedrooms": 4,
+    "dateAdded": "2024-10-20",
+    "postcode": "SW15",
+    "location": "Putney, London",
+    "shortDescription": "Magnificent family estate with private driveway",
+    "longDescription": "Prepare to fall in love with this exceptional family haven! This impressive 4-bedroom detached beauty offers everything a growing family could dream of. The heart of the home is a stunning kitchen-breakfast room perfect for family gatherings, while the expansive living room provides endless entertaining possibilities. Four generous bedrooms mean everyone gets their own space, and the private garden is an absolute paradise for kids and pets. Plus, you'll never fight for parking with your own double driveway! This is the family home you've been searching for. 🌟👨‍👩‍👧‍👦",
+    "images": [
+      "images/house_7.jpg",
+      "images/house_8.jpg",
+      "images/house_9.jpg",
+      "images/house_10.jpg",
+      "images/house_11.jpg",
+      "images/house_12.jpg",
+      "images/house_13.jpg"
+    ],
+    "floorPlan": "images/floorplan_1.jpg",
+    "mapCoordinates": { "lat": 51.4618, "lng": -0.2165 }
+  },
+  {
+    "id": 4,
+    "type": "Flat",
+    "price": 195000,
+    "bedrooms": 1,
+    "dateAdded": "2024-12-10",
+    "postcode": "E14",
+    "location": "Canary Wharf, London",
+    "shortDescription": "Spectacular penthouse with breathtaking Thames panoramas",
+    "longDescription": "Live in the clouds! This stunning 12th-floor masterpiece offers jaw-dropping views that will take your breath away every single day. Watch the sunrise over the Thames, see the city lights twinkle at night - this is London living at its absolute finest! The floor-to-ceiling windows create a bright, airy atmosphere, while the modern open-plan design is perfect for both relaxing and entertaining. Building perks include a 24-hour concierge (hello, luxury!), private gym, and beautiful communal gardens. Your dream home in the sky awaits! ☁️✨",
+    "images": [
+      "images/flat_7.jpg",
+      "images/flat_8.jpg",
+      "images/flat_12.jpg",
+      "images/flat_9.jpg",
+      "images/flat_10.jpg",
+      "images/flat_11.jpg"
+    ],
+    "floorPlan": "images/floorplan_1.jpg",
+    "mapCoordinates": { "lat": 51.5045, "lng": -0.0195 }
+  },
+  {
+    "id": 5,
+    "type": "House",
+    "price": 320000,
+    "bedrooms": 2,
+    "dateAdded": "2024-11-28",
+    "postcode": "SE10",
+    "location": "Greenwich, London",
+    "shortDescription": "Gorgeously renovated terrace near historic Greenwich Park",
+    "longDescription": "This little treasure has been lovingly transformed into a modern masterpiece! Every detail has been carefully considered, from the contemporary bathroom fixtures to the stylish kitchen that's perfect for your morning coffee ritual. The two double bedrooms are cozy sanctuaries, and the beautifully landscaped garden is your own private escape from city life. Step outside and you're moments from the magnificent Greenwich Park - imagine weekend picnics with that view! History, beauty, and modern comfort all in one perfect package. 🌳💚",
+    "images": [
+      "images/house_14.jpg",
+      "images/house_15.jpg",
+      "images/house_16.jpg",
+      "images/house_17.jpg",
+      "images/house_18.jpg",
+      "images/house_19.jpg"
+      
+    ],
+    "floorPlan": "images/floorplan_1.jpg",
+    "mapCoordinates": { "lat": 51.4826, "lng": -0.0077 }
+  },
+  {
+    "id": 6,
+    "type": "House",
+    "price": 925000,
+    "bedrooms": 5,
+    "dateAdded": "2024-09-15",
+    "postcode": "NW3",
+    "location": "Hampstead, London",
+    "shortDescription": "Prestigious 5-bedroom mansion in elite Hampstead",
+    "longDescription": "Welcome to the pinnacle of London luxury! This absolutely magnificent 5-bedroom detached residence is the definition of elegant living. From the moment you enter the grand hallway, you'll know this is something special. Multiple reception rooms flow gracefully through the home, while the state-of-the-art kitchen is a culinary dream come true. Each of the five bedrooms features its own ensuite bathroom - pure luxury for everyone! The home office is perfect for modern working, and the professionally landscaped gardens are simply stunning. Double garage, moments from Hampstead Heath, and located in one of London's most prestigious postcodes. This is the home dreams are made of! 🏆✨",
+    "images": [
+      "images/house_20.jpg",
+      "images/house_21.jpg",
+      "images/house_13.jpg",
+      "images/house_22.jpg",
+      "images/house_23.jpg",
+      "images/house_24.jpg",
+      "images/house_25.jpg"
+    ],
+    "floorPlan": "images/floorplan_1.jpg",
+    "mapCoordinates": { "lat": 51.5556, "lng": -0.1778 }
+  },
+  {
+    "id": 7,
+    "type": "Flat",
+    "price": 385000,
+    "bedrooms": 3,
+    "dateAdded": "2024-11-05",
+    "postcode": "SW11",
+    "location": "Battersea, London",
+    "shortDescription": "Spacious 3-bed paradise with sunny balcony & parking",
+    "longDescription": "Get ready to love life in this absolutely fabulous 3-bedroom apartment! Light pours in from every angle, creating the warmest, most inviting atmosphere. The open-plan living area is perfect for movie nights or hosting friends, flowing onto your own private balcony - imagine summer evenings out there! The master bedroom comes with its own ensuite (fancy!), and there's plenty of room for everyone. Underground parking means no more circling for spots, and you can be in central London faster than you can say 'Battersea!' This is modern city living done right. Your happy place awaits! 🌞🎉",
+    "images": [
+      "images/flat_12.jpg",
+      "images/flat_13.jpg",
+      "images/flat_14.jpg",
+      "images/flat_15.jpg",
+      "images/flat_16.jpg",
+      "images/flat_17.jpg"
+    ],
+    "floorPlan": "images/floorplan_1.jpg",
+    "mapCoordinates": { "lat": 51.4746, "lng": -0.1659 }
+  }
+]
