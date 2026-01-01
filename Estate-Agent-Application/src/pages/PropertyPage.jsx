@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -7,7 +7,11 @@ import { useFavourites } from '../FavouritesContext';
 import propertiesData from '../data/properties.json';
 import { formatPrice, formatDate } from '../utils/searchFilters';
 
-
+/**
+ * PropertyPage Component
+ * Detailed view of individual property
+ * Includes gallery, tabs for description/floorplan/map, and favourite functionality
+ */
 const PropertyPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();

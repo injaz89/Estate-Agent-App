@@ -1,10 +1,14 @@
 /**
+ * Search filter utilities for property search functionality
+ * Handles multi-criteria filtering with optional parameters
+ */
+
+/**
  * Main search function that applies all filters to properties
  * @param {Array} properties - Array of property objects
  * @param {Object} filters - Filter criteria object
  * @returns {Array} Filtered array of properties
  */
-
 export const searchProperties = (properties, filters) => {
   let results = [...properties];
 
@@ -64,6 +68,10 @@ export const searchProperties = (properties, filters) => {
   return results;
 };
 
+/**
+ * Validates if property matches a single filter criterion
+ * Used for testing individual filter logic
+ */
 export const matchesFilter = (property, filterType, filterValue) => {
   switch (filterType) {
     case 'type':

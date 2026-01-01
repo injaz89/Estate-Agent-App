@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { FavouritesProvider } from './FavouritesContext';
+import SearchPage from './pages/SearchPage';
+import PropertyPage from './pages/PropertyPage';
+import './styles/App.css';
 
+/**
+ * Main App Component
+ * Sets up routing and global context providers
+ */
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <FavouritesProvider>
+      <Router>
+        <div className="app">
+          {/* Content Security Policy Meta Tag */}
+          <meta
+            httpEquiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https: data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-src https://www.google.com;"
+          />
+
+          {/* Main Routes */}
+          <Routes>
+            <Route path="/" element={<SearchPage />} />
+            <Route path="/property/:id" element={<PropertyPage />} />
+          </Routes>
+
+          {/* Footer */}
+          <footer className="app-footer">
+            <p>&copy; 2025 Estate Agent App. All rights reserved.</p>
+          </footer>
+        </div>
+      </Router>
+    </FavouritesProvider>
+  );
 }
 
-export default App
+export default App;

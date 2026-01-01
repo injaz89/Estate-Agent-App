@@ -4,7 +4,12 @@ import { useDrop } from 'react-dnd';
 import { useFavourites } from '../FavouritesContext';
 import { formatPrice } from '../utils/searchFilters';
 
-
+/**
+ * FavouritesList Component
+ * Displays saved favourite properties
+ * Accepts drag-and-drop to add properties
+ * Allows removal via button or drag-out
+ */
 const FavouritesList = () => {
   const { favourites, addFavourite, removeFavourite, clearFavourites } = useFavourites();
 

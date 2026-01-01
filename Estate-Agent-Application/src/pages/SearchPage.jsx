@@ -7,7 +7,11 @@ import FavouritesList from '../components/FavouritesList';
 import propertiesData from '../data/properties.json';
 import { searchProperties } from '../utils/searchFilters';
 
-
+/**
+ * SearchPage Component
+ * Main page containing search form, results, and favourites panel
+ * Handles property filtering and display
+ */
 const SearchPage = () => {
   const [properties] = useState(propertiesData);
   const [searchResults, setSearchResults] = useState(propertiesData);

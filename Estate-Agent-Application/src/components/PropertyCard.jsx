@@ -4,6 +4,11 @@ import { useDrag } from 'react-dnd';
 import { useFavourites } from '../FavouritesContext';
 import { formatPrice } from '../utils/searchFilters';
 
+/**
+ * PropertyCard Component
+ * Displays individual property in search results
+ * Supports drag-and-drop to favourites
+ */
 const PropertyCard = ({ property }) => {
   const { addFavourite, isFavourite } = useFavourites();
 
