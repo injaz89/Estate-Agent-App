@@ -4,11 +4,10 @@ import { Link } from 'react-router-dom';
 import { useFavourites } from '../FavouritesContext';
 import { formatPrice } from '../utils/searchFilters';
 
-/**
- * FavouritesList Component
- * Displays saved properties with drag-and-drop support
- * Allows removal via button click or dragging out
- */
+// FavouritesList Component
+// Displays saved properties with drag-and-drop support
+// Allows removal via button click or dragging out
+ 
 const FavouritesList = () => {
   const { favourites, addFavourite, removeFavourite, clearFavourites } = useFavourites();
   const panelRef = useRef(null);
@@ -91,10 +90,9 @@ const FavouritesList = () => {
   );
 };
 
-/**
- * FavouriteItem Component
- * Individual favourite property with drag-out and remove functionality
- */
+// FavouriteItem Component
+// Individual favourite property with drag-out and remove functionality
+ 
 const FavouriteItem = ({ property, onRemove }) => {
   const itemRef = useRef(null);
 

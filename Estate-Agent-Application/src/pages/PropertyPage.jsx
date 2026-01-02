@@ -7,11 +7,10 @@ import { useFavourites } from '../FavouritesContext';
 import propertiesData from '../data/properties.json';
 import { formatPrice, formatDate } from '../utils/searchFilters';
 
-/**
- * PropertyPage Component
- * Detailed view of individual property
- * Includes gallery, tabs for description/floorplan/map, and favourite functionality
- */
+
+ // PropertyPage Component
+ // Detailed view of individual property
+ 
 const PropertyPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -37,11 +36,13 @@ const PropertyPage = () => {
 
   const isInFavourites = isFavourite(property.id);
 
-  // Toggle favourite status
+  // Toggle favourite status - FIXED
   const handleFavouriteToggle = () => {
     if (isInFavourites) {
+      // Remove from favourites
       removeFavourite(property.id);
     } else {
+      // Add to favourites
       addFavourite(property);
     }
   };
@@ -71,7 +72,7 @@ const PropertyPage = () => {
             onClick={handleFavouriteToggle}
             aria-label={isInFavourites ? 'Remove from favourites' : 'Add to favourites'}
           >
-            {isInFavourites ? '❤️ Saved' : '🤍 Save'}
+            {isInFavourites ? '❤️ Remove from Saved' : '🤍 Save Property'}
           </button>
         </div>
       </div>
@@ -149,13 +150,7 @@ const PropertyPage = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="contact-section">
-        <div className="contact-card">
-          <h3>Interested in this property?</h3>
-          <p>Contact us to arrange a viewing or get more information</p>
-          <button className="btn btn-primary btn-large">Request Viewing</button>
-        </div>
-      </section>
+      
     </div>
   );
 };

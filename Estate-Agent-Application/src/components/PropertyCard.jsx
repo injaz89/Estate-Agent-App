@@ -7,10 +7,10 @@ import { formatPrice } from '../utils/searchFilters';
 /**
  * PropertyCard Component
  * Displays individual property in search results
- * Supports drag-and-drop to favourites
+ * Supports drag-and-drop to favourites and toggle favourite button
  */
 const PropertyCard = ({ property }) => {
-  const { addFavourite, isFavourite } = useFavourites();
+  const { addFavourite, removeFavourite, isFavourite } = useFavourites();
 
   // Configure drag behavior for this property
   const [{ isDragging }, drag] = useDrag(() => ({
@@ -21,11 +21,19 @@ const PropertyCard = ({ property }) => {
     }),
   }));
 
-  // Handle favourite button click
+  // Handle favourite button click - TOGGLE functionality
   const handleFavouriteClick = (e) => {
     e.preventDefault(); // Prevent navigation
     e.stopPropagation();
-    addFavourite(property);
+    
+    // Check if already in favourites
+    if (isAlreadyFavourite) {
+      // Remove from favourites
+      removeFavourite(property.id);
+    } else {
+      // Add to favourites
+      addFavourite(property);
+    }
   };
 
   const isAlreadyFavourite = isFavourite(property.id);
@@ -47,8 +55,8 @@ const PropertyCard = ({ property }) => {
           <button
             className={`favourite-btn ${isAlreadyFavourite ? 'active' : ''}`}
             onClick={handleFavouriteClick}
-            aria-label={isAlreadyFavourite ? 'Already in favourites' : 'Add to favourites'}
-            title={isAlreadyFavourite ? 'Already in favourites' : 'Add to favourites'}
+            aria-label={isAlreadyFavourite ? 'Remove from favourites' : 'Add to favourites'}
+            title={isAlreadyFavourite ? 'Remove from favourites' : 'Add to favourites'}
           >
             <span className="heart-icon">{isAlreadyFavourite ? '❤️' : '🤍'}</span>
           </button>

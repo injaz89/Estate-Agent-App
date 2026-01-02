@@ -1,9 +1,9 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
-/**
- * Context for managing favourite properties across the application
- * Provides global state and methods for adding/removing favourites
- */
+
+ // Context for managing favourite properties across the application
+ // Provides global state and methods for adding/removing favourites
+
 const FavouritesContext = createContext();
 
 export const useFavourites = () => {
@@ -35,10 +35,10 @@ export const FavouritesProvider = ({ children }) => {
     }
   }, [favourites]);
 
-  /**
-   * Add a property to favourites
-   * Prevents duplicates by checking property ID
-   */
+  
+   // Add a property to favourites
+   // Prevents duplicates by checking property ID
+   
   const addFavourite = (property) => {
     setFavourites((prev) => {
       // Check if property already exists
@@ -51,23 +51,20 @@ export const FavouritesProvider = ({ children }) => {
     });
   };
 
-  /**
-   * Remove a property from favourites by ID
-   */
+  // Remove a property from favourites by ID
+   
   const removeFavourite = (propertyId) => {
     setFavourites((prev) => prev.filter((fav) => fav.id !== propertyId));
   };
 
-  /**
-   * Clear all favourites
-   */
+  // Clear all favourites
+  
   const clearFavourites = () => {
     setFavourites([]);
   };
 
-  /**
-   * Check if a property is in favourites
-   */
+  // Check if a property is in favourites
+   
   const isFavourite = (propertyId) => {
     return favourites.some((fav) => fav.id === propertyId);
   };

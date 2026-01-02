@@ -1,7 +1,4 @@
-/**
- * Search filter utilities for property search functionality
- * Handles multi-criteria filtering with optional parameters
- */
+// Search filter utilities for property search functionality
 
 /**
  * Main search function that applies all filters to properties
@@ -68,10 +65,8 @@ export const searchProperties = (properties, filters) => {
   return results;
 };
 
-/**
- * Validates if property matches a single filter criterion
- * Used for testing individual filter logic
- */
+// Validates if property matches a single filter criterion
+ 
 export const matchesFilter = (property, filterType, filterValue) => {
   switch (filterType) {
     case 'type':
@@ -93,16 +88,14 @@ export const matchesFilter = (property, filterType, filterValue) => {
   }
 };
 
-/**
- * Format price for display (e.g., 450000 -> £450,000)
- */
+// Format price for display (e.g., 450000 -> £450,000)
+
 export const formatPrice = (price) => {
   return `£${price.toLocaleString('en-GB')}`;
 };
 
-/**
- * Format date for display
- */
+// Format date for display
+
 export const formatDate = (dateString) => {
   const date = new Date(dateString);
   return date.toLocaleDateString('en-GB', {
