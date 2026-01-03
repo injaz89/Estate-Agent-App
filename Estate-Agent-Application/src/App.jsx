@@ -5,20 +5,15 @@ import SearchPage from './pages/SearchPage';
 import PropertyPage from './pages/PropertyPage';
 import './styles/App.css';
 
-  // Main App Component
- // Sets up routing and global context providers
- 
+/**
+ * Main App Component
+ * Sets up routing and global context providers
+ */
 function App() {
   return (
     <FavouritesProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <div className="app">
-          {/* Content Security Policy Meta Tag */}
-          <meta
-            httpEquiv="Content-Security-Policy"
-            content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https: data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-src https://www.google.com;"
-          />
-
           {/* Main Routes */}
           <Routes>
             <Route path="/" element={<SearchPage />} />
