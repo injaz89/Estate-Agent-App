@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 
-// PropertyGallery Component
-// Interactive image gallery with main image and thumbnails
- 
- 
+/**
+ * PropertyGallery Component
+ * Interactive image gallery with main image and thumbnails
+ * Allows users to browse through all property images
+ */
 const PropertyGallery = ({ images, altText }) => {
   const [selectedImage, setSelectedImage] = useState(0);
+
+  // Helper function to get correct image path
+  const getImagePath = (imagePath) => {
+    const cleanPath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
+    return `${import.meta.env.BASE_URL}${cleanPath}`;
+  };
 
   // Navigate to previous image
   const goToPrevious = () => {
@@ -37,7 +44,7 @@ const PropertyGallery = ({ images, altText }) => {
           ‹
         </button>
         <img
-          src={images[selectedImage]}
+          src={getImagePath(images[selectedImage])}
           alt={`${altText} - Image ${selectedImage + 1}`}
           className="main-image"
         />
@@ -66,7 +73,7 @@ const PropertyGallery = ({ images, altText }) => {
             aria-label={`View image ${index + 1}`}
           >
             <img
-              src={image}
+              src={getImagePath(image)}
               alt={`Thumbnail ${index + 1}`}
               loading="lazy"
             />

@@ -12,6 +12,12 @@ import { formatPrice } from '../utils/searchFilters';
 const PropertyCard = ({ property }) => {
   const { addFavourite, removeFavourite, isFavourite } = useFavourites();
 
+  // Helper function to get correct image path
+  const getImagePath = (imagePath) => {
+    const cleanPath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
+    return `${import.meta.env.BASE_URL}${cleanPath}`;
+  };
+
   // Configure drag behavior for this property
   const [{ isDragging }, drag] = useDrag(() => ({
     type: 'PROPERTY',
@@ -23,15 +29,12 @@ const PropertyCard = ({ property }) => {
 
   // Handle favourite button click - TOGGLE functionality
   const handleFavouriteClick = (e) => {
-    e.preventDefault(); // Prevent navigation
+    e.preventDefault();
     e.stopPropagation();
     
-    // Check if already in favourites
     if (isAlreadyFavourite) {
-      // Remove from favourites
       removeFavourite(property.id);
     } else {
-      // Add to favourites
       addFavourite(property);
     }
   };
@@ -48,7 +51,7 @@ const PropertyCard = ({ property }) => {
         {/* Property Image */}
         <div className="property-image">
           <img
-            src={property.images[0]}
+            src={getImagePath(property.images[0])}
             alt={property.shortDescription}
             loading="lazy"
           />

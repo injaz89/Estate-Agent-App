@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -7,19 +7,24 @@ import { useFavourites } from '../FavouritesContext';
 import propertiesData from '../data/properties.json';
 import { formatPrice, formatDate } from '../utils/searchFilters';
 
-
- // PropertyPage Component
- // Detailed view of individual property
- 
+/**
+ * PropertyPage Component
+ * Detailed view of individual property with image path fixes
+ */
 const PropertyPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const { addFavourite, removeFavourite, isFavourite } = useFavourites();
 
+  // Helper function to get correct image path
+  const getImagePath = (imagePath) => {
+    const cleanPath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
+    return `${import.meta.env.BASE_URL}${cleanPath}`;
+  };
+
   // Find property by ID
   const property = propertiesData.find((p) => p.id === parseInt(id));
 
-  // Handle invalid property ID
   if (!property) {
     return (
       <div className="property-page error-page">
@@ -36,22 +41,18 @@ const PropertyPage = () => {
 
   const isInFavourites = isFavourite(property.id);
 
-  // Toggle favourite status - FIXED
   const handleFavouriteToggle = () => {
     if (isInFavourites) {
-      // Remove from favourites
       removeFavourite(property.id);
     } else {
-      // Add to favourites
       addFavourite(property);
     }
   };
 
   return (
     <div className="property-page">
-      {/* Navigation Bar */}
       <nav className="property-nav">
-        <button onClick={() => navigate(-1)} className="btn-back" aria-label="Go back">
+        <button onClick={() => navigate(-1)} className="btn-back">
           ← Back to Results
         </button>
         <Link to="/" className="btn-home">
@@ -59,7 +60,6 @@ const PropertyPage = () => {
         </Link>
       </nav>
 
-      {/* Property Header */}
       <div className="property-header">
         <div className="header-content">
           <h1>{property.shortDescription}</h1>
@@ -70,14 +70,12 @@ const PropertyPage = () => {
           <button
             className={`btn-favourite ${isInFavourites ? 'active' : ''}`}
             onClick={handleFavouriteToggle}
-            aria-label={isInFavourites ? 'Remove from favourites' : 'Add to favourites'}
           >
             {isInFavourites ? '❤️ Remove from Saved' : '🤍 Save Property'}
           </button>
         </div>
       </div>
 
-      {/* Key Information */}
       <div className="property-key-info">
         <div className="info-badge">
           <span className="info-label">Property Type</span>
@@ -97,12 +95,10 @@ const PropertyPage = () => {
         </div>
       </div>
 
-      {/* Image Gallery */}
       <section className="gallery-section">
         <PropertyGallery images={property.images} altText={property.shortDescription} />
       </section>
 
-      {/* Tabbed Content */}
       <section className="tabs-section">
         <Tabs>
           <TabList>
@@ -122,7 +118,7 @@ const PropertyPage = () => {
             <div className="tab-content floorplan-tab">
               <h3>Floor Plan</h3>
               <img
-                src={property.floorPlan}
+                src={getImagePath(property.floorPlan)}
                 alt="Property floor plan"
                 className="floorplan-image"
               />
@@ -149,7 +145,6 @@ const PropertyPage = () => {
         </Tabs>
       </section>
 
-      {/* Contact Section */}
       
     </div>
   );
