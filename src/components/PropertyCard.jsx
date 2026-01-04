@@ -4,11 +4,9 @@ import { useDrag } from 'react-dnd';
 import { useFavourites } from '../FavouritesContext';
 import { formatPrice } from '../utils/searchFilters';
 
-/**
- * PropertyCard Component
- * Displays individual property in search results
- * Supports drag-and-drop to favourites and toggle favourite button
- */
+ // Displays individual property in search results
+ // Drag-and-drop to favourites and toggle favourite button
+ 
 const PropertyCard = ({ property }) => {
   const { addFavourite, removeFavourite, isFavourite } = useFavourites();
 

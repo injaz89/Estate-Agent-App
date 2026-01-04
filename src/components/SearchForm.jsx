@@ -4,7 +4,6 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 
-// SearchForm Component
 // Uses React Widgets for all form inputs to enhance UX
 // Handles multi-criteria property search
  

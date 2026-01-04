@@ -5,10 +5,9 @@ import SearchPage from './pages/SearchPage';
 import PropertyPage from './pages/PropertyPage';
 import './styles/App.css';
 
-/**
- * Main App Component
- * Sets up routing and global context providers
- */
+  // Main App Component
+  // Sets up routing and global context providers
+ 
 function App() {
   return (
     <FavouritesProvider>

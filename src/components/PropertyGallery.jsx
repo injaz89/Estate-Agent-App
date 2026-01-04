@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
-/**
- * PropertyGallery Component
- * Interactive image gallery with main image and thumbnails
- * Allows users to browse through all property images
- */
+
+ //  Interactive image gallery with main image and thumbnails
+ // Allows users to browse through all property images
+ 
 const PropertyGallery = ({ images, altText }) => {
   const [selectedImage, setSelectedImage] = useState(0);
 

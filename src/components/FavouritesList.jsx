@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { useFavourites } from '../FavouritesContext';
 import { formatPrice } from '../utils/searchFilters';
 
-// FavouritesList Component
 // Displays saved properties with drag-and-drop support
 // Allows removal via button click or dragging out
  

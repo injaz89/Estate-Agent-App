@@ -7,10 +7,9 @@ import { useFavourites } from '../FavouritesContext';
 import propertiesData from '../data/properties.json';
 import { formatPrice, formatDate } from '../utils/searchFilters';
 
-/**
- * PropertyPage Component
- * Detailed view of individual property with image path fixes
- */
+  // PropertyPage Component
+ // Detailed view of individual property with image path fixes
+ 
 const PropertyPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
