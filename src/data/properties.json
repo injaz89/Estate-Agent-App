@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "type": "House",
+    "price": 45000000,
+    "bedrooms": 3,
+    "dateAdded": "2024-11-15",
+    "postcode": "10400",
+    "location": "Kollupitiya, Colombo 3",
+    "shortDescription": "Stunning Colonial gem with enchanting garden paradise",
+    "longDescription": "Step into this absolutely breathtaking Colonial masterpiece where history meets modern luxury! This beautiful home welcomes you with its grand entrance hall, leading to a gorgeously renovated chef's kitchen with granite countertops and premium appliances. The spacious living areas flow seamlessly into a magical rear garden - perfect for evening gatherings and lazy Sunday afternoons. Located in a highly sought-after neighborhood with top-rated schools just around the corner. This isn't just a house, it's a lifestyle! ✨🏡",
+    "images": [
+      "Images/house_1.jpg",
+      "Images/house_2.jpg",
+      "Images/house_3.jpg",
+      "Images/house_4.jpg",
+      "Images/house_5.jpg",
+      "Images/house_11.jpg",
+      "Images/house_6.jpg"
+    ],
+    "floorPlan": "Images/floorPlan_1.jpg",
+    "mapCoordinates": { "lat": 6.9147, "lng": 79.8501 }
+  },
+  {
+    "id": 2,
+    "type": "Flat",
+    "price": 28000000,
+    "bedrooms": 2,
+    "dateAdded": "2024-12-01",
+    "postcode": "00700",
+    "location": "Rajagiriya, Colombo",
+    "shortDescription": "Ultra-modern sky apartment in vibrant Rajagiriya",
+    "longDescription": "Welcome to urban living at its finest! This sleek, contemporary 2-bedroom sanctuary sits in the beating heart of Colombo's business district. Floor-to-ceiling windows flood the open-plan living space with natural light, while the designer kitchen boasts top-of-the-line appliances that would make any chef smile. Wake up to stunning city views, walk to trendy cafes, and reach the city center in minutes. Perfect for young professionals who want to live where the action is! 🎨🌆",
+    "images": [
+      "Images/flat_1.jpg",
+      "Images/flat_2.jpg",
+      "Images/flat_3.jpg",
+      "Images/flat_4.jpg",
+      "Images/flat_5.jpg",
+      "Images/flat_6.jpg"
+    ],
+    "floorPlan": "Images/floorPlan_2.jpg",
+    "mapCoordinates": { "lat": 6.9147, "lng": 79.8910 }
+  },
+  {
+    "id": 3,
+    "type": "House",
+    "price": 75000000,
+    "bedrooms": 4,
+    "dateAdded": "2024-10-20",
+    "postcode": "20000",
+    "location": "Kandy City, Kandy",
+    "shortDescription": "Magnificent family estate with mountain views",
+    "longDescription": "Prepare to fall in love with this exceptional family haven! This impressive 4-bedroom detached beauty offers everything a growing family could dream of. The heart of the home is a stunning kitchen-breakfast room perfect for family gatherings, while the expansive living room provides endless entertaining possibilities with breathtaking views of the Knuckles mountain range. Four generous bedrooms mean everyone gets their own space, and the private garden is an absolute paradise for kids and pets. Plus, you'll never fight for parking with your own double driveway! This is the family home you've been searching for. 🌟👨‍👩‍👧‍👦",
+    "images": [
+      "Images/house_7.jpg",
+      "Images/house_8.jpg",
+      "Images/house_9.jpg",
+      "Images/house_10.jpg",
+      "Images/house_11.jpg",
+      "Images/house_12.jpg",
+      "Images/house_13.jpg"
+    ],
+    "floorPlan": "Images/floorPlan_3.jpg",
+    "mapCoordinates": { "lat": 7.2906, "lng": 80.6337 }
+  },
+  {
+    "id": 4,
+    "type": "Flat",
+    "price": 19500000,
+    "bedrooms": 1,
+    "dateAdded": "2024-12-10",
+    "postcode": "00300",
+    "location": "Slave Island, Colombo 2",
+    "shortDescription": "Spectacular penthouse with breathtaking ocean views",
+    "longDescription": "Live in the clouds! This stunning 12th-floor masterpiece offers jaw-dropping views that will take your breath away every single day. Watch the sunrise over the Indian Ocean, see the city lights twinkle at night - this is Colombo living at its absolute finest! The floor-to-ceiling windows create a bright, airy atmosphere, while the modern open-plan design is perfect for both relaxing and entertaining. Building perks include a 24-hour security (hello, safety!), private gym, and beautiful rooftop pool. Your dream home in the sky awaits! ☁️✨",
+    "images": [
+      "Images/flat_7.jpg",
+      "Images/flat_8.jpg",
+      "Images/flat_12.jpg",
+      "Images/flat_9.jpg",
+      "Images/flat_10.jpg",
+      "Images/flat_11.jpg"
+    ],
+    "floorPlan": "Images/floorPlan_4.jpg",
+    "mapCoordinates": { "lat": 6.9271, "lng": 79.8612 }
+  },
+  {
+    "id": 5,
+    "type": "House",
+    "price": 32000000,
+    "bedrooms": 2,
+    "dateAdded": "2024-11-28",
+    "postcode": "80000",
+    "location": "Fort, Galle",
+    "shortDescription": "Gorgeously renovated villa near historic Galle Fort",
+    "longDescription": "This little treasure has been lovingly transformed into a modern masterpiece! Every detail has been carefully considered, from the contemporary bathroom fixtures to the stylish kitchen that's perfect for your morning tea ritual. The two double bedrooms are cozy sanctuaries, and the beautifully landscaped garden is your own private escape from city life. Step outside and you're moments from the magnificent Galle Fort - imagine weekend walks along the ramparts with that ocean view! History, beauty, and modern comfort all in one perfect package. 🌳💚",
+    "images": [
+      "Images/house_14.jpg",
+      "Images/house_15.jpg",
+      "Images/house_16.jpg",
+      "Images/house_17.jpg",
+      "Images/house_18.jpg",
+      "Images/house_19.jpg"
+    ],
+    "floorPlan": "Images/floorPlan_5.jpg",
+    "mapCoordinates": { "lat": 6.0329, "lng": 80.2168 }
+  },
+  {
+    "id": 6,
+    "type": "House",
+    "price": 92500000,
+    "bedrooms": 5,
+    "dateAdded": "2024-09-15",
+    "postcode": "00500",
+    "location": "Cinnamon Gardens, Colombo 7",
+    "shortDescription": "Prestigious 5-bedroom mansion in elite Colombo 7",
+    "longDescription": "Welcome to the pinnacle of Colombo luxury! This absolutely magnificent 5-bedroom detached residence is the definition of elegant living. From the moment you enter the grand hallway, you'll know this is something special. Multiple reception rooms flow gracefully through the home, while the state-of-the-art kitchen is a culinary dream come true. Each of the five bedrooms features its own ensuite bathroom - pure luxury for everyone! The home office is perfect for modern working, and the professionally landscaped gardens are simply stunning. Double garage, moments from Viharamahadevi Park, and located in one of Colombo's most prestigious postcodes. This is the home dreams are made of! 🏆✨",
+    "images": [
+      "Images/house_20.jpg",
+      "Images/house_21.jpg",
+      "Images/house_13.jpg",
+      "Images/house_22.jpg",
+      "Images/house_23.jpg",
+      "Images/house_24.jpg",
+      "Images/house_19.jpg"
+    ],
+    "floorPlan": "Images/floorPlan_6.jpg",
+    "mapCoordinates": { "lat": 6.9124, "lng": 79.8640 }
+  },
+  {
+    "id": 7,
+    "type": "Flat",
+    "price": 38500000,
+    "bedrooms": 3,
+    "dateAdded": "2024-11-05",
+    "postcode": "00400",
+    "location": "Bambalapitiya, Colombo 4",
+    "shortDescription": "Spacious 3-bed paradise with ocean view balcony & parking",
+    "longDescription": "Get ready to love life in this absolutely fabulous 3-bedroom apartment! Light pours in from every angle, creating the warmest, most inviting atmosphere. The open-plan living area is perfect for movie nights or hosting friends, flowing onto your own private balcony with stunning Galle Face ocean views - imagine sunset evenings out there! The master bedroom comes with its own ensuite (fancy!), and there's plenty of room for everyone. Underground parking means no more worrying about street parking, and you can reach Galle Face Green faster than you can say 'Bambalapitiya!' This is modern Colombo living done right. Your happy place awaits! 🌞🎉",
+    "images": [
+      "Images/flat_12.jpg",
+      "Images/flat_13.jpg",
+      "Images/flat_14.jpg",
+      "Images/flat_15.jpg",
+      "Images/flat_16.jpg",
+      "Images/flat_17.jpg"
+    ],
+    "floorPlan": "Images/floorPlan_7.jpg",
+    "mapCoordinates": { "lat": 6.8942, "lng": 79.8528 }
+  }
+]
