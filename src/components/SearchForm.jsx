@@ -28,16 +28,16 @@ const SearchForm = ({ onSearch }) => {
   // Options for price dropdowns (in thousands)
   const priceOptions = [
     { value: 0, label: 'No Min/Max' },
-    { value: 100000, label: '£100,000' },
-    { value: 200000, label: '£200,000' },
-    { value: 300000, label: '£300,000' },
-    { value: 400000, label: '£400,000' },
-    { value: 500000, label: '£500,000' },
-    { value: 600000, label: '£600,000' },
-    { value: 700000, label: '£700,000' },
-    { value: 800000, label: '£800,000' },
-    { value: 900000, label: '£900,000' },
-    { value: 1000000, label: '£1,000,000' },
+    { value: 10000000, label: '£10,000,000' },
+    { value: 20000000, label: '£20,000,000' },
+    { value: 30000000, label: '£30,000,000' },
+    { value: 40000000, label: '£40,000,000' },
+    { value: 50000000, label: '£50,000,000' },
+    { value: 60000000, label: '£60,000,000' },
+    { value: 70000000, label: '£70,000,000' },
+    { value: 80000000, label: '£80,000,000' },
+    { value: 90000000, label: '£90,000,000' },
+    { value: 100000000, label: '£100,000,000' },
   ];
 
   // Options for bedroom dropdowns
