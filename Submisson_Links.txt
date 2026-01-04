@@ -1,0 +1,8 @@
+GitHub Repository:
+https://github.com/injaz89/Estate-Agent-App
+
+Live Deployment (GitHub Pages):
+https://injaz89.github.io/Estate-Agent-App/
+
+Student Name: M.I.M.Injas
+Student ID: 20231964 / w2120341
